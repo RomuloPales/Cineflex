@@ -26,7 +26,7 @@ export default function Sessoes() {
                         <p>{response.weekday} - {response.date}</p>
                         <div>
                             {response.showtimes.map((response) => (
-                                <Link data-test="showtime" to={`/assentos/${response.id}`}>
+                                <Link to={`/assentos/${response.id}`}>
                                     <button data-test="showtime">{response.name}</button>
                                 </Link>
                             ))}
@@ -125,7 +125,7 @@ const TextoStyled= styled.div`
         font-family: 'Roboto';
         font-style: normal;
         font-weight: 400;
-        font-size: 16px;
+        font-size: 26px;
         line-height: 30px;
     }  
 `

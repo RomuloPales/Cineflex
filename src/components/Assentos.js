@@ -114,8 +114,11 @@ export default function Assentos( { setArrayDados } ) {
                     <img src={assentosFilme.movie.posterURL} alt='' />
                 </Quadro>
                 <TextoStyled>
-                    <p>{assentosFilme.movie.title}</p>
-                    <p>{assentosFilme.day.weekday} - {assentosFilme.name}</p>
+                    <p>{assentosFilme.movie.title}  
+                    <br/>
+                    {assentosFilme.day.weekday} - {assentosFilme.name}
+                    </p>
+                    
                 </TextoStyled>
             </FooterStyled>
         </AssentosStyled>
@@ -134,7 +137,7 @@ const AssentosStyled = styled.div`
         font-family: 'Roboto';
         font-style: normal;
         font-weight: 400;
-        font-size: 24px;
+        font-size: 26px;
         line-height: 28px;
         letter-spacing: 0.04em;
         color: #293845;
@@ -223,7 +226,7 @@ const TextoStyled= styled.div`
         font-family: 'Roboto';
         font-style: normal;
         font-weight: 400;
-        font-size: 16px;
+        font-size: 26px;
         line-height: 30px;
     }  
 `
