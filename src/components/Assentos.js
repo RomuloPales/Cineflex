@@ -27,7 +27,7 @@ export default function Assentos( { setArrayDados } ) {
 
     function Seats(props) {
         return (
-            <AssentosSessao  key={props.id} cor={props.isAvailable ? (poltronas.includes(props.name) ? "#1AAE9E" : "#C3CFD9") : "#FBE192"} onClick={() => ocuparAssento(props.isAvailable, props.name)}data-test="seat">
+            <AssentosSessao   key={props.id} cor={props.isAvailable ? (poltronas.includes(props.name) ? "#1AAE9E" : "#C3CFD9") : "#FBE192"} onClick={() => ocuparAssento(props.isAvailable, props.name)}>
                 {props.name}   
             </AssentosSessao>
         )
@@ -85,7 +85,7 @@ export default function Assentos( { setArrayDados } ) {
     return (
         <AssentosStyled>
             <h1>Selecione o(s) assento(s)</h1>
-            <div>
+            <div data-test="seat">
                 {assentosFilme.seats.map((filme) => <Seats id={filme.id} name={filme.name} isAvailable={filme.isAvailable} />)}
             </div>
             <PainelStyled>
