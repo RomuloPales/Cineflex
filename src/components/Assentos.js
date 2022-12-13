@@ -27,7 +27,7 @@ export default function Assentos( { setArrayDados } ) {
 
     function Seats(props) {
         return (
-            <AssentosSessao  data-test="seat" key={props.id} cor={props.isAvailable ? (poltronas.includes(props.name) ? "#1AAE9E" : "#C3CFD9") : "#FBE192"} onClick={() => ocuparAssento(props.isAvailable, props.name)}>
+            <AssentosSessao  key={props.id} cor={props.isAvailable ? (poltronas.includes(props.name) ? "#1AAE9E" : "#C3CFD9") : "#FBE192"} onClick={() => ocuparAssento(props.isAvailable, props.name)}data-test="seat">
                 {props.name}   
             </AssentosSessao>
         )
