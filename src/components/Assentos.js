@@ -13,7 +13,7 @@ export default function Assentos( { setArrayDados } ) {
     let { idSessao } = useParams();
     let objTemp ={}
 
-        console.log( )
+        
     useEffect(() => {
         axios
             .get(`https://mock-api.driven.com.br/api/v8/cineflex/showtimes/${idSessao}/seats`)
@@ -64,7 +64,7 @@ export default function Assentos( { setArrayDados } ) {
         setArrayDados(objTemp);
     }
     
-    console.log(assentosFilme)
+
 
 
     function dadoosClientes(event) {

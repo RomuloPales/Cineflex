@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom'
 
 export default function Sucesso( {arrayDados, setArrayDados } ) {
     const navigate = useNavigate();
-    console.log(arrayDados)
+    
     function home(){
         setArrayDados({})
         navigate("/")

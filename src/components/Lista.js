@@ -13,7 +13,7 @@ export default function Lista() {
             
             .catch((erro) => console.log(erro));
 	}, []);
-    console.log(lista)
+    
 
     if(lista === undefined) {
         return <p>Carregando...</p>;
