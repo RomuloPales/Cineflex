@@ -13,10 +13,9 @@ export default function PaginaPrincipal() {
 }
 
 const PaginaPrincipalStyled = styled.div`
-    width: 374px;
-    height: 110px;
+    margin: 0 auto;
     margin-top: 67px;
-    
+    background-color: red;
     display: flex;
     flex-direction: column;
     align-items: center;
